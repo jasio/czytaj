@@ -70,7 +70,7 @@ body {
 
 #title {
 	padding-top:20px;
-	padding-bottom:50px;
+	padding-bottom:70px;
 	font-family: LeagueGothic, Helvetica, sans-serif;
 }
 
@@ -111,6 +111,15 @@ body {
 	-webkit-transform: rotate(-15deg);
 }
 
+.dropdown-menu {
+	width: 100px;
+}
+
+.dropdown-menu li {
+	font-family: Noteworthy, serif;
+	text-align: center;
+}
+
 #zobaczinneosoby:hover {
 	text-shadow: rgba(0,0,0,0.6) 1px 0px 20px;
 	background-position: 0 0px;
@@ -119,3 +128,66 @@ body {
 #zobaczinneosoby:focus {
 	border-color:#09C;
 }
+
+#ostatnie {
+	font-size: 18px;
+	padding: 10px;
+	padding-left: 15px;
+	border: 1px dashed;
+	border-right: none;
+}
+
+.imie {
+	color: #3FBCDE;
+}
+
+#lista {
+	border: none;
+	border-right: none;
+	width:540px;
+	height:400px;
+	margin-top: -10px;
+	overflow: scroll;
+	-webkit-box-shadow: inset 1px 1px 30px 1px rgba(0, 0, 0, 0.4);	
+	background: url('../img/lista_bg.gif');
+	
+}
+
+#lista p {
+	padding: 20px;
+	padding-bottom: 0px;
+}
+
+#containtersylwetka {
+	background: url('../img/sylwetka_janek.gif') no-repeat;
+	min-height:350px;
+}
+
+#containtersylwetka h1 {
+	color: #3FBCDE;
+	margin-left: 180px;
+	margin-top: 100px;
+	text-align: center;
+	font-weight: normal;
+	font-size: 40px;
+	text-shadow: 1px -1px 1px #dbdbdb;
+	filter: dropshadow(color=#dbdbdb, offx=1, offy=-1);
+	line-height: 1.4em;
+}
+
+#containtersylwetka p {
+	color: #333;
+	font-size: 24px;
+	text-align: center;
+	font-weight: normal;
+}
+
+#containtersylwetka p:first-of-type {
+	margin-left: 180px;
+	margin-bottom: 100px;
+}
+
+.progress {
+	margin: 20px;
+}
+
