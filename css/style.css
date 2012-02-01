@@ -1,0 +1,11 @@
+body {
+  padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+
+#title {
+	padding-bottom:50px;
+}
+
+#ocowtymchodzi {
+	margin-top:100px;
+}
