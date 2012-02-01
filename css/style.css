@@ -35,6 +35,7 @@ STYLES
 body {
   padding-top: 40px; /* container nie nachodzi na nawigację */
   background: url('../img/strony.gif') top center no-repeat,
+			  url('../img/acozemna_bg.gif') bottom center repeat-x,
 			  url('../img/bg_kratka.gif');
 }
 
@@ -101,9 +102,9 @@ body {
 	width:100px;
 	height:50px;
 	padding:9px;
-	padding-top:12px;
-	font-family: Noteworthy, serif;
-	font-size:16px;
+	padding-top:16px;
+	font-family: 'Loved by the King', cursive;
+	font-size:22px;
 	background-image:none;
 	background-image:url('../img/zobaczinneosoby_bg.gif');
 	background-color:rgba(255,255,255,0.1);
@@ -116,8 +117,9 @@ body {
 }
 
 .dropdown-menu li {
-	font-family: Noteworthy, serif;
+	font-family: 'Loved by the King', cursive;
 	text-align: center;
+	font-size:18px;
 }
 
 #zobaczinneosoby:hover {
@@ -147,7 +149,8 @@ body {
 	width:540px;
 	height:400px;
 	margin-top: -10px;
-	overflow: scroll;
+	margin-bottom: 50px;
+	overflow: auto;
 	-webkit-box-shadow: inset 1px 1px 30px 1px rgba(0, 0, 0, 0.4);	
 	background: url('../img/lista_bg.gif');
 	
@@ -191,3 +194,21 @@ body {
 	margin: 20px;
 }
 
+#acozemna h1 {
+	text-align: center;
+	font-size: 32px;
+	color: #FFF;
+	line-height: 2em;
+}
+
+#acozemna p {
+	text-align: center;
+	font-size: 18px;
+	color: #FFF;
+	padding-bottom: 40px;
+}
+
+#stopka p {
+	text-align: center;
+	color: rgba(255,255,255,0.6);
+}
