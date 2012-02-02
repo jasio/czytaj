@@ -147,7 +147,7 @@ body {
 	border: none;
 	border-right: none;
 	width:540px;
-	height:400px;
+	height:550px;
 	margin-top: -10px;
 	margin-bottom: 50px;
 	overflow: auto;
@@ -164,6 +164,7 @@ body {
 #containtersylwetka {
 	background: url('../img/sylwetka_janek.gif') no-repeat;
 	min-height:350px;
+	margin-top:40px;
 }
 
 #containtersylwetka h1 {
@@ -180,9 +181,15 @@ body {
 
 #containtersylwetka p {
 	color: #333;
-	font-size: 24px;
 	text-align: center;
 	font-weight: normal;
+	line-height: 1.5em;
+	font-size: 16px;
+}
+
+.wzrost {
+	font-size: 24px;
+	
 }
 
 #containtersylwetka p:first-of-type {
@@ -197,18 +204,84 @@ body {
 #acozemna h1 {
 	text-align: center;
 	font-size: 32px;
-	color: #FFF;
+	color: rgba(255,255,255,0.9);
 	line-height: 2em;
 }
 
 #acozemna p {
 	text-align: center;
 	font-size: 18px;
-	color: #FFF;
+	color: rgba(255,255,255,0.8);
 	padding-bottom: 40px;
 }
 
 #stopka p {
 	text-align: center;
 	color: rgba(255,255,255,0.6);
+}
+
+.search {
+	width: 100px;
+	float:right;
+	margin-right: 15px;
+	margin-top: -42px;
+}
+
+.filter {
+	float: right;
+	margin: 15px;
+}
+
+.list li {
+	margin: 20px;
+	margin-top: 30px;
+	padding: 15px;
+	border: 2px dashed rgba(0,0,0,0.5);
+}
+
+.list h6 {
+	padding-top:15px;
+	
+}
+
+.thumb {
+	max-width: 80px;
+	display: inline;
+	float: left;
+	margin-right: 20px;
+	-webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+.author {
+	line-height: 0.5em;
+	font-size: 20px;
+	
+}
+
+.name {
+	line-height: 0.5em;
+	font-size: 32px;
+}
+
+.category {
+	line-height: 0.5em;
+	
+}
+
+.height {
+}
+
+.desc {
+	margin-left:-20px;
+	margin-top: 10px;
+	text-align: justify;
+}
+
+.recommend {
+	float: right;
+	padding-left: 150px;
+	margin-top: -100px;
+	
 }

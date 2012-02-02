@@ -75,43 +75,68 @@
 			</div>
 
 			<!-- Poziom nagłówka tabeli -->
+		
+			<div id="lovely-things-list">
+		
 			<div class="row">
-				<div class="span7 offset5"><p id="ostatnie">Ostatnie książki przeczytane przez <span class="imie">Janka</span>:</p></div>
+				<div class="span7 offset5"><p id="ostatnie">Ostatnie książki przeczytane przez <span class="imie">Janka</span>:</p> <input class="search" placeholder="szukaj" /> 
+        </div>
 			</div>
 			
 			<!-- Poziom tabeli i sylwetki -->
 			<div class="row"> 
 				<div class="span5" id="containtersylwetka">
 					<h1>Janek</h1>
-					<p>175 cm</p>
+					<p class="wzrost">175 cm</p>
 					<div class="progress progress-info progress-striped active">
 						<div class="bar" style="width: 18%;"></div>
 						
 					</div>
-					<p>18% przeczytane</p>
+					<p><span class="label label-info">18%</span> przeczytane</p>
+					<p>czyli ok. <span class="label label-info">2400 stron</span></p>
+					<p>książki utworzyłyby wieżę <br>o wysokości <span class="label label-info">25 cm</span></p>
 				</div>
+				
 				<div class="span7" id="lista">
-					
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada sodales dolor at blandit. Suspendisse eleifend, tellus non ultrices placerat, massa nunc sagittis justo, quis molestie velit nulla in risus. In erat enim, imperdiet non sodales a, consectetur et arcu. Cras rhoncus elit nec lorem accumsan sed mattis turpis mollis. Donec ullamcorper adipiscing metus ac tristique. Mauris sit amet erat nec neque vestibulum venenatis a ut lorem. In hac habitasse platea dictumst. Integer ac urna ut neque sagittis ullamcorper.</p>
+              <ul class="filter">
+	              	<li class="btn" id="filter-none"><i class="icon-th-list"></i></li>
+                  <li class="btn" id="filter-beverages"><i class="icon-heart"></i></li>
+              </ul>
+              <ul class="list unstyled">
+                  <li>
+                      <img src="img/books/stevejobs.jpeg" class="thumb" />
 
-					<p>Sed porta porta lectus. Vestibulum tellus magna, laoreet eget porttitor et, condimentum id est. Aliquam sit amet quam elit, ornare tincidunt nibh. Cras mauris ligula, pharetra eget vehicula adipiscing, egestas eu leo. Cras id ipsum in felis tristique malesuada. Quisque fermentum dignissim massa, eget iaculis sapien eleifend ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ipsum velit, suscipit id aliquet sed, porta sed mi. Nunc erat sapien, elementum vel porttitor nec, tincidunt ac neque. Duis urna mi, feugiat id mattis eu, bibendum nec massa. Vestibulum eros nisi, dictum eget congue a, ultricies sed felis. Nunc sit amet sem velit. Cras tortor risus, blandit quis pretium vitae, ultrices at velit.</p>
+											<p class="author">Walter Isaacson</p>
+											
+                      <p class="name">Steve Jobs</p> 
+											<h6><span class="category">Biografia</span> • <span class="height">2 cm grubości</span></h6>
+											<p class="recommend"><img class="recommend_icon" src="img/recommend.png" alt="Polecamy!"></p>
+											
+											<p class="desc"><span class="readwhen label label-success">Styczeń</span>
+                      <span class="description">Opierając się na ponad czterdziestu rozmowach z Jobsem, przeprowadzonych w ciągu dwóch lat, a także na wywiadach z ponad setką osób: członkami rodziny, przyjaciółmi, przeciwnikami, konkurentami i kolegami Jobsa, Walter Isaacson spisał wciągającą opowieść o pełnym wzlotów i upadków życiu oraz płomiennej osobowości twórczego przedsiębiorcy, którego wykraczająca poza wszelkie schematy pasja i perfekcjonizm zrewolucjonizowały sześć branż: komputery osobiste, filmy animowane, muzykę, telefony, tablety i publikacje cyfrowe.</span></p>
+                  </li>
+                  <li>
+                      <img src="images/coffee.jpg" class="thumb" />
+                      <h4><span class="name">Good Coffee</span> <span class="category">Beverage</span></h4></h4>
+											<p class="author">Anonim</p>
+											<p class="height">2 cm</p>
+											<p class="readwhen">Luty 2012</p>	
+											<p class="recommend"></p>
+                      <p class="description">Coffee is a brewed beverage with a dark, slightly acidic flavor prepared from the roasted seeds of the coffee plant, colloquially called coffee beans.</p>
+                  </li>
+                  <li>
+                      <img src="images/fullthrottle.jpg" class="thumb" />
+                      <h4><span class="name">Full Throttle</span> <span class="category">Game</span></h4></h4>
+											<p class="author">Anonim</p>
+											<p class="height">2 cm</p>
+											<p class="readwhen">Luty 2012</p>
+											<p class="recommend">Nie</p>
+                      <p class="description">Full Throttle is a computer adventure game developed and published by LucasArts. It was designed by Tim Schafer, who would later go on to design the critically acclaimed titles Grim Fandango, Psychonauts and Brütal Legend.</p>
+                  </li>
 
-					<p>Mauris congue fermentum lectus sed fringilla. Pellentesque vel tortor est. Donec tincidunt dui sed risus semper quis scelerisque diam fermentum. Duis non orci erat. Vivamus odio nulla, congue sit amet luctus et, consectetur id sapien. Suspendisse blandit fermentum quam sit amet mollis. Integer lacinia nibh sit amet erat accumsan rutrum. Nunc ut ligula augue. Vivamus a fermentum nisl. Nulla id elit nisi. Integer lobortis justo eget metus bibendum ac mattis neque tempus. Phasellus blandit enim non nunc pellentesque gravida. Sed a velit et metus posuere fermentum quis nec risus. Mauris laoreet elit at tortor volutpat ultricies.</p>
-
-					<p>Etiam tellus velit, adipiscing blandit facilisis sed, pellentesque sed nisl. Cras aliquet, lectus at feugiat tempor, dui quam aliquet felis, vel porta erat elit sed erat. Aliquam erat volutpat. Mauris ultrices posuere condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper scelerisque ultrices. Phasellus imperdiet, est ut pharetra viverra, ligula turpis euismod augue, ac iaculis dui magna id mauris.</p>
-
-					<p>Etiam sit amet nisi ac urna faucibus hendrerit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras nec felis nisl, et tristique tortor. Morbi tincidunt, odio rutrum mattis aliquam, quam mi ultrices libero, a bibendum eros sem vel nisi. Morbi non elit sed odio ultricies rutrum vitae rhoncus leo. Maecenas sed neque nisl. Proin at massa justo. Donec mattis posuere ligula. Praesent mollis arcu a arcu lacinia bibendum. In gravida, neque vitae hendrerit ultrices, dui nunc aliquam purus, vitae iaculis arcu quam quis est. Aenean vitae velit eget magna ultricies tempus nec eu arcu. Mauris interdum turpis vestibulum enim adipiscing in consequat eros commodo. Ut justo tellus, faucibus a feugiat et, hendrerit luctus augue. Etiam ac tortor vitae libero ornare aliquet eu quis metus. Aliquam erat volutpat. Cras vel metus diam, eu adipiscing diam.</p>
-
-					<p>Mauris tellus lacus, mollis eu varius sit amet, lacinia vitae nibh. Nunc turpis sapien, molestie sed consequat aliquam, condimentum vel mi. Etiam tellus magna, euismod ut viverra eu, euismod vitae ligula. Donec tortor nunc, consectetur malesuada suscipit nec, molestie at elit. Ut nisi est, rutrum sed tempus eu, pellentesque ac ante. Nam venenatis mollis risus. Sed tincidunt ultrices erat sed ultricies. Cras sed turpis a justo fringilla dictum.</p>
-
-					<p>Nulla quis ligula sed diam lobortis ornare at nec enim. Proin eleifend porttitor pulvinar. Nulla facilisi. Vivamus congue lorem posuere urna pulvinar dignissim. Morbi gravida auctor orci, in semper tellus molestie ut. Cras at libero eget nisi auctor congue at sit amet orci. Nullam ac nibh lacus. Aliquam erat volutpat. Aenean neque enim, sodales non tincidunt a, fringilla ac lorem. Curabitur iaculis posuere neque quis porta. Cras ut elit est. Nullam vulputate metus odio, eu molestie neque. Nam at felis nisi, in venenatis tellus. Duis tempus posuere eros et lacinia.</p>
-
-					<p>Praesent pretium posuere sapien, et tincidunt enim aliquet vel. Aliquam sapien urna, eleifend id faucibus sed, aliquet non augue. Duis fermentum lacus nisl. Etiam vitae justo sit amet magna interdum pretium vitae vitae libero. Nam rutrum, dolor nec commodo ultricies, erat nulla auctor massa, nec bibendum odio justo vitae magna. In hac habitasse platea dictumst. Quisque consequat rutrum felis dapibus gravida. Aliquam vestibulum pharetra feugiat. Ut volutpat egestas ante nec convallis. Vivamus enim dui, placerat ac venenatis sed, aliquam at erat. In suscipit iaculis lacus malesuada posuere.</p>
-
-					<p>Aliquam semper auctor lectus, in auctor est fringilla non. Vestibulum condimentum erat in velit vulputate in feugiat felis malesuada. Pellentesque sit amet erat felis. Sed facilisis, nibh ut tincidunt consequat, erat enim varius lacus, sed gravida enim diam eu augue. Duis tellus enim, consectetur vel congue a, sagittis sit amet tellus. Duis quis scelerisque elit. Fusce et diam nec ante ultrices scelerisque at quis arcu. Aliquam rutrum tempus fringilla. Nam mi mi, consequat eget accumsan et, suscipit non orci. Integer consequat facilisis aliquet. Sed id nunc massa. Aliquam erat volutpat.</p>
-
-					<p>Maecenas interdum mollis turpis sed vehicula. Morbi pretium, urna sit amet fringilla pulvinar, nunc sapien molestie lorem, vitae malesuada nulla urna ac arcu. In et tempor quam. Cras ac tristique odio. Morbi dictum justo eu purus elementum venenatis. Mauris vel tincidunt est. Aenean et ligula nec ipsum fermentum mattis sit amet et metus. Aenean et odio vitae est vestibulum placerat pretium et massa. Nunc dolor ligula, luctus non pretium in, pellentesque eu sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras vitae quam sed ante suscipit volutpat. Vestibulum turpis justo, rhoncus in pellentesque id, laoreet at odio. In at purus nisi.</p>
-					</div>
+              </ul>
+						</div>
+          </div>
 					
 			
 			</div>
@@ -127,7 +152,7 @@
 			<!-- Poziom stopki -->
 			<div class="row">
 				<div class="span12" id="stopka">
-					<p>Copyright 2012, Jan Giemza. Built with Bootstrap.</p>
+					<p>&copy; Jan Giemza (bookznami.pl), 2012. <i class="icon-info-sign icon-white"></i></p>
 				</div>
 			</div>
 		
@@ -148,7 +173,34 @@
     <script src="js/bootstrap-collapse.js"></script>
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>
+		<script type="text/javascript" src="js/list.min.js"></script>
 		<script src="js/app.js"></script>
+		
+		<script type="text/javascript">
+        
+        var options = {
+    	    valueNames: [ 'name', 'author', 'description', 'category', 'height', 'readwhen', 'recommend' ]
+        };
+
+        var featureList = new List('lovely-things-list', options);
+        
+     
+        
+        $('#filter-beverages').click(function() {
+            featureList.filter(function(values) {
+                if (values.recommend !== "") {
+                    return true;
+                } else {
+                    return false;
+                }
+            });
+            return false;
+        });
+        $('#filter-none').click(function() {
+            featureList.filter();
+            return false;
+        });
+    </script>
 
   </body>
 </html>
