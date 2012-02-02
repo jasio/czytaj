@@ -170,7 +170,7 @@ body {
 #containtersylwetka h1 {
 	color: #3FBCDE;
 	margin-left: 180px;
-	margin-top: 100px;
+	margin-top: 50px;
 	text-align: center;
 	font-weight: normal;
 	font-size: 40px;
@@ -185,6 +185,18 @@ body {
 	font-weight: normal;
 	line-height: 1.5em;
 	font-size: 16px;
+}
+
+.sylwetkainfo {
+	font-family: 'Loved by the King', cursive;
+	font-size: 20px;
+	text-align: center;
+	line-height:1.2em;
+	margin-left: 180px;
+	color: rgba(0,0,0,0.8);
+	-webkit-transform: rotate(-5deg);
+	margin-top:-50px;
+	margin-bottom:50px;
 }
 
 .wzrost {
@@ -285,3 +297,26 @@ body {
 	margin-top: -100px;
 	
 }
+
+#janek {
+	display: inline;
+}
+
+.nondisplay {
+	display: none;
+}
+
+#weareusing {
+	float:right;
+	margin-right: 30px;
+	margin-top: 15px;
+	font-size: 15px;
+	line-height: 1.6em;
+}
+
+#mikethefrog {
+	font-family: 'Loved by the King', cursive;
+	font-size: 30px;
+	line-height: 1.6em;
+}
+

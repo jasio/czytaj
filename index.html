@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>BOOK Z NAMI: Przeczytaj tyle, ile masz wzrostu</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Wyzwanie na rok 2012: przeczytaj tyle książek, żeby utworzyły wieżę równą twojemu wzrostowi.">
+    <meta name="author" content="Jan Giemza">
 
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -14,12 +14,12 @@
     <link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Loved+by+the+King' rel='stylesheet'>
+		<link rel="stylesheet" href="js/TangleKit/TangleKit.css" type="text/css">
 
     <!-- Ikony -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
   </head>
 
   <body>
@@ -66,16 +66,16 @@
 						    <span class="caret"></span>
 						  </a>
 						  <ul class="dropdown-menu">
-						   <li><a href="#">Janek</a></li>
-							 <li><a href="#">Agnieszka</a></li>
-							 <li><a href="#">Dominik</a></li>
+						   <li><a href="#" id="janeklink">Janek</a></li>
+							 <li><a href="#" id="agnieszkalink">Agnieszka</a></li>
+							 <li><a href="#" id="dominiklink">Dominik</a></li>
 						  </ul>
 						</div>
 					</div>
 			</div>
 
 			<!-- Poziom nagłówka tabeli -->
-		
+			<div id="janek">
 			<div id="lovely-things-list">
 		
 			<div class="row">
@@ -87,6 +87,57 @@
 			<div class="row"> 
 				<div class="span5" id="containtersylwetka">
 					<h1>Janek</h1>
+					<p class="wzrost">175 cm</p>
+					<aside class="sylwetkainfo">redaktor naczelny<br>bookznami.pl</aside>
+					<div class="progress progress-info progress-striped active">
+						<div class="bar" style="width: 18%;"></div>
+						
+					</div>
+					<p><span class="label label-info">18%</span> przeczytane</p>
+					<p>czyli ok. <span class="label label-info">2400 stron</span></p>
+					<p>książki utworzyłyby wieżę <br>o wysokości <span class="label label-info">25 cm</span></p>
+				</div>
+				
+				<div class="span7" id="lista">
+              <ul class="filter">
+	              	<li class="btn" id="filter-none"><i class="icon-th-list"></i></li>
+                  <li class="btn" id="filter-beverages"><i class="icon-heart"></i></li>
+              </ul>
+              <ul class="list unstyled">
+                  <li>
+                      <img src="img/books/stevejobs.jpeg" class="thumb" />
+
+											<p class="author">Walter Isaacson</p>
+											
+                      <p class="name">Steve Jobs</p> 
+											<h6><span class="category">Biografia</span> • <span class="height">2 cm grubości</span></h6>
+											<p class="recommend"><img class="recommend_icon" src="img/recommend.png" alt="Polecamy!"></p>
+											
+											<p class="desc"><span class="readwhen label label-success">Styczeń</span>
+                      <span class="description">Opierając się na ponad czterdziestu rozmowach z Jobsem, przeprowadzonych w ciągu dwóch lat, a także na wywiadach z ponad setką osób: członkami rodziny, przyjaciółmi, przeciwnikami, konkurentami i kolegami Jobsa, Walter Isaacson spisał wciągającą opowieść o pełnym wzlotów i upadków życiu oraz płomiennej osobowości twórczego przedsiębiorcy, którego wykraczająca poza wszelkie schematy pasja i perfekcjonizm zrewolucjonizowały sześć branż: komputery osobiste, filmy animowane, muzykę, telefony, tablety i publikacje cyfrowe.</span></p>
+                  </li>
+									
+
+              </ul>
+						</div>
+          </div>		
+			</div>
+			</div>	
+			
+			<!--AGNIESZKA -->
+			<!-- Poziom nagłówka tabeli -->
+			<div id="agnieszka" class="nondisplay">
+			<div id="lovely-things-list">
+		
+			<div class="row">
+				<div class="span7 offset5"><p id="ostatnie">Ostatnie książki przeczytane przez <span class="imie">Agnieszkę</span>:</p> <input class="search" placeholder="szukaj" /> 
+        </div>
+			</div>
+			
+			<!-- Poziom tabeli i sylwetki -->
+			<div class="row"> 
+				<div class="span5" id="containtersylwetka">
+					<h1>Agnieszka</h1>
 					<p class="wzrost">175 cm</p>
 					<div class="progress progress-info progress-striped active">
 						<div class="bar" style="width: 18%;"></div>
@@ -137,15 +188,15 @@
               </ul>
 						</div>
           </div>
-					
-			
 			</div>
+			</div>
+			
 			
 			<!-- Poziom dolnego paska -->
 			<div class="row">
 				<div class="span12" id="acozemna">
 					<h1>A co ze mną?!</h1>
-					<p>Jeśli masz 175 cm wzrostu, musisz czytać każdego dnia ok. 200 stron, co daje ok. 2 książek tygodniowo. </p>
+					<p id="lcalc">Jeśli masz <span class="TKAdjustableNumber" data-min="50" data-max="250" data-var="lwzrost"> cm wzrostu</span>, musisz czytać każdego dnia ok. <span data-var="lstrony" data-format="%.0f"> stron</span>, co daje ok. <span data-var="lksiazki" data-format="%.0f"> książek</span> w ciągu roku. </p>
 				</div>
 			</div>
 			
@@ -163,12 +214,26 @@
 			<div id="siteinfo" class="modal hide fade">
         <div class="modal-header">
           <a class="close" data-dismiss="modal" >&times;</a>
-          <h3>O stronie</h3>
+          <h3>Projekt 2012</h3>
         </div>
         <div class="modal-body">
-          <h4>Text in a modal</h4>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.</p>
-
+          <h4>Możesz pisać do nas w każdej sprawie na &nbsp;<a href="mailto:redakcja@bookznami.pl"><span class="btn"><i class="icon-envelope"></i> redakcja@bookznami.pl</span></a></h4>
+          <p>Szukamy patronów medialnych i sponsorów dla tego projektu i tych nadchodzących.</p>
+<hr>
+<p>Strona została przygotowana z myślą o współczesnych przeglądarkach:</p>
+<ul>
+	<li>Chrome 17+</li>
+	<li>Safari 5+</li>
+	<li>Firefox 10+</li>
+	<li>Internet Explorer 9+</li>
+	<li>Opera 11+</li>
+</ul>
+<p>Upewnij się, że posiadasz włączoną obsługę JavaScript. (<a href="http://support.google.com/adsense/bin/answer.py?hl=pl&answer=12654" target="_blank">jak to zrobić?</a>)</p>
+<hr>
+<p id="weareusing"><span id="mikethefrog">Site built with a little help <br>from Mike the Frog</span>.<br> We are also using <a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a>, <br><a href="http://listjs.com/" target="_blank">List.js</a> and <a href="http://worrydream.com/Tangle/" target="_blank">Tangle</a>.</p>
+<p><a href="http://teamtreehouse.com" target="_blank">
+<img src="img/mikethefrog.jpeg">
+</a></p>
         </div>
         <div class="modal-footer">
           <a href="#" class="btn btn-primary" data-dismiss="modal">Zamknij</a>
@@ -209,6 +274,14 @@
 		<script type="text/javascript" src="js/list.min.js"></script>
 		<script src="js/app.js"></script>
 		<script src="js/lista.js"></script>
+		
+		<!-- Tangle -->
+		<script type="text/javascript" src="js/Tangle.js"></script>
+		<script type="text/javascript" src="js/TangleKit/mootools.js"></script>
+		<script type="text/javascript" src="js/TangleKit/sprintf.js"></script>
+		<script type="text/javascript" src="js/TangleKit/BVTouchable.js"></script>
+		<script type="text/javascript" src="js/TangleKit/TangleKit.js"></script>
+		<script type="text/javascript" src="js/lcalc.js"></script>
 
   </body>
 </html>
