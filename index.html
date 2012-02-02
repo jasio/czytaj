@@ -49,7 +49,7 @@
 			<!-- Poziom tytułu -->
 			<div class="row">
 					<div class="span2">
-						<a href="#" class="btn" id="ocowtymchodzi" rel="popover" title="Chcemy czytać więcej." data-content="Dlatego przez najbliższy rok bla bla bla...">O co w tym chodzi? &raquo;</a>
+						<a href="#aboutproject" class="btn" id="ocowtymchodzi" data-toggle="modal">O co w tym chodzi? &raquo;</a>
 					</div>
 					<div class="span8">
 						<hgroup id="title">     
@@ -152,15 +152,48 @@
 			<!-- Poziom stopki -->
 			<div class="row">
 				<div class="span12" id="stopka">
-					<p>&copy; Jan Giemza (bookznami.pl), 2012. <i class="icon-info-sign icon-white"></i></p>
+					<p>&copy; Jan Giemza (bookznami.pl), 2012. <a data-toggle="modal" href="#siteinfo"><i class="icon-info-sign icon-white"></i></a></p>
 				</div>
 			</div>
 		
 		</div>
+		
+		
+		<!--O stronie-->
+			<div id="siteinfo" class="modal hide fade">
+        <div class="modal-header">
+          <a class="close" data-dismiss="modal" >&times;</a>
+          <h3>O stronie</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Text in a modal</h4>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.</p>
+
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-primary" data-dismiss="modal">Zamknij</a>
+        </div>
+      </div>
+
+      <!--O co w tym chodzi?-->
+			<div id="aboutproject" class="modal hide fade">
+        <div class="modal-header">
+          <a class="close" data-dismiss="modal" >&times;</a>
+          <h3>O co w tym chodzi?</h3>
+        </div>
+        <div class="modal-body">
+          <h4>Text in a modal</h4>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.</p>
+
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-primary" data-dismiss="modal">Zamknij</a>
+        </div>
+      </div>
 
 		<!-- Szczypta magii na koniec -->
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-		<script src="js/jquery.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script src="js/bootstrap-transition.js"></script>
     <script src="js/bootstrap-alert.js"></script>
     <script src="js/bootstrap-modal.js"></script>
@@ -175,32 +208,7 @@
     <script src="js/bootstrap-typeahead.js"></script>
 		<script type="text/javascript" src="js/list.min.js"></script>
 		<script src="js/app.js"></script>
-		
-		<script type="text/javascript">
-        
-        var options = {
-    	    valueNames: [ 'name', 'author', 'description', 'category', 'height', 'readwhen', 'recommend' ]
-        };
-
-        var featureList = new List('lovely-things-list', options);
-        
-     
-        
-        $('#filter-beverages').click(function() {
-            featureList.filter(function(values) {
-                if (values.recommend !== "") {
-                    return true;
-                } else {
-                    return false;
-                }
-            });
-            return false;
-        });
-        $('#filter-none').click(function() {
-            featureList.filter();
-            return false;
-        });
-    </script>
+		<script src="js/lista.js"></script>
 
   </body>
 </html>
