@@ -136,7 +136,11 @@ body {
 	background-image:url('../img/zobaczinneosoby_bg.gif');
 	background-color:rgba(255,255,255,0.1);
 	border:none;
-	-webkit-transform: rotate(-15deg);
+	-moz-transform: scale(1) rotate(-15deg) translate(0px, 0px) skew(0deg, 0deg);
+	-webkit-transform: scale(1) rotate(-15deg) translate(0px, 0px) skew(0deg, 0deg);
+	-o-transform: scale(1) rotate(-15deg) translate(0px, 0px) skew(0deg, 0deg);
+	-ms-transform: scale(1) rotate(-15deg) translate(0px, 0px) skew(0deg, 0deg);
+	transform: scale(1) rotate(-15deg) translate(0px, 0px) skew(0deg, 0deg);
 }
 
 .dropdown-menu {
@@ -175,11 +179,15 @@ body {
 	border: none;
 	border-right: none;
 	width:540px;
-	height:550px;
+	height:650px;
 	margin-top: -10px;
 	margin-bottom: 50px;
 	overflow: auto;
-	-webkit-box-shadow: inset 1px 1px 30px 1px rgba(0, 0, 0, 0.4);	
+	-webkit-box-shadow: inset 1px 1px 30px 1px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: inset 1px 1px 30px 1px rgba(0, 0, 0, 0.4);	
+	-o-box-shadow: inset 1px 1px 30px 1px rgba(0, 0, 0, 0.4);	
+	-ms-box-shadow: inset 1px 1px 30px 1px rgba(0, 0, 0, 0.4);	
+	box-shadow: inset 1px 1px 30px 1px rgba(0, 0, 0, 0.4);		
 	background: url('../img/lista_bg.gif');
 	
 }
@@ -222,8 +230,11 @@ body {
 	line-height:1.2em;
 	margin-left: 180px;
 	color: rgba(0,0,0,0.8);
-	-webkit-transform: rotate(-5deg);
-	margin-top:-50px;
+	-moz-transform: scale(1) rotate(-5deg) translate(0px, 0px) skew(0deg, 0deg);
+	-webkit-transform: scale(1) rotate(-5deg) translate(0px, 0px) skew(0deg, 0deg);
+	-o-transform: scale(1) rotate(-5deg) translate(0px, 0px) skew(0deg, 0deg);
+	-ms-transform: scale(1) rotate(-5deg) translate(0px, 0px) skew(0deg, 0deg);
+	transform: scale(1) rotate(-5deg) translate(0px, 0px) skew(0deg, 0deg);	margin-top:-50px;
 	margin-bottom:50px;
 }
 
@@ -292,6 +303,8 @@ body {
 	margin-right: 20px;
 	-webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.4);
 	-moz-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.4);
+	-o-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.4);
+	-ms-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.4);
 	box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.4);
 }
 
@@ -347,5 +360,16 @@ body {
 	font-family: 'Loved by the King', cursive;
 	font-size: 30px;
 	line-height: 1.6em;
+}
+
+#cosadzisz {
+	margin-left:45px;
+	margin-right: 35px;
+	margin-top: 40px;
+	padding:10px;
+}
+
+#cosadzisz * {
+	text-decoration:none;
 }
 

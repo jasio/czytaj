@@ -54,7 +54,7 @@
 					<div class="span8">
 						<hgroup id="title">     
 							 
-							<h2>Projekt 2012</h2>
+							<h2>Wyzwanie 2012</h2>
 							<h1>Przeczytaj tyle, ile masz wzrostu</h1>
 							
 						</hgroup>
@@ -100,7 +100,17 @@
 					<p><span class="label label-info">18%</span> przeczytane</p>
 					<p>czyli ok. <span class="label label-info">2400 stron</span></p>
 					<p>książki utworzyłyby wieżę <br>o wysokości <span class="label label-info">25 cm</span></p>
+					<div id="cosadzisz">
+							<a data-toggle="modal" href="#skomentuj"><div class="alert alert-info">
+							<h4 class="alert-heading">Co sądzisz o naszym wyzwaniu?</h4>
+							Dopisz się i zobacz, co napisali inni. &raquo;
+						</div></a>
+					</div>
+					
+					
 				</div>
+				
+				
 				
 				<div class="span7" id="lista">
               
@@ -253,7 +263,7 @@
 		</div>
 		
 		
-		<!--O stronie-->
+			<!--O stronie-->
 			<div id="siteinfo" class="modal hide fade">
         <div class="modal-header">
           <a class="close" data-dismiss="modal" >&times;</a>
@@ -293,6 +303,31 @@
           <h4>Text in a modal</h4>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.</p>
 
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-primary" data-dismiss="modal">Zamknij</a>
+        </div>
+      </div>
+
+			<!-- Skomentuj -->
+			<div id="skomentuj" class="modal hide fade">
+        <div class="modal-header">
+          <a class="close" data-dismiss="modal" >&times;</a>
+          <h3>Skomentuj!</h3>
+        </div>
+				<div id="fb-root"></div>
+				<script>(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "https://connect.facebook.net/pl_PL/all.js#xfbml=1&appId=413252915952";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+
+        <div class="modal-body">
+          <h4>Text in a modal</h4>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.</p>
+					<div class="fb-comments" data-href="http://czytaj.bookznami.pl" data-num-posts="10" data-width="530"></div>
         </div>
         <div class="modal-footer">
           <a href="#" class="btn btn-primary" data-dismiss="modal">Zamknij</a>
