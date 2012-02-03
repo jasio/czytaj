@@ -12,6 +12,21 @@ $(document).ready(function(){
 	});
 });
 
+$(document).ready(function(){
+	$("li#filter-none").hide();
+	$("li#filter-beverages").click(function(){
+		$("li#filter-beverages").hide();
+		$("li#filter-none").show();
+	});
+});
+
+$(document).ready(function(){
+	$("li#filter-none").click(function(){
+		$("li#filter-none").hide();
+		$("li#filter-beverages").show();
+	});
+});
+
 $("a[rel=popover]")
   .popover()
   .click(function(e) {
@@ -21,4 +36,13 @@ $("a[rel=popover]")
 $('#siteinfo').modal('hide');
 
 $('#aboutproject').modal('hide')
+
+$('.filter').tooltip({
+     selector: "a[rel=tooltip]"
+   })
+
+$('div#stopka').tooltip({
+     selector: "a[rel=tooltip]"
+   })
+
 

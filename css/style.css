@@ -28,6 +28,31 @@ FONTS
 ANIMATIONS
 *********/
 
+@-webkit-keyframes showup {
+	0% {
+	opacity: 0;
+	}
+	70% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+body {
+	-webkit-animation-name:showup;
+	-webkit-animation-duration:0.5s;
+	-webkit-animation-timing-function:ease-in;
+}
+
+#lovely-things-list {
+	-webkit-animation-name:showup;
+	-webkit-animation-duration:0.5s;
+	-webkit-animation-timing-function:ease-in;
+}
+
+
 /*********
 STYLES
 *********/
@@ -37,6 +62,8 @@ body {
   background: url('../img/strony.gif') top center no-repeat,
 			  url('../img/acozemna_bg.gif') bottom center repeat-x,
 			  url('../img/bg_kratka.gif');
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: lighter;
 }
 
 #nav_container {
@@ -128,7 +155,8 @@ body {
 }
 
 #zobaczinneosoby:focus {
-	border-color:#09C;
+	border-color: rgba(0,0,0,0.0);
+	background-position: 0 0px;
 }
 
 #ostatnie {
@@ -189,7 +217,7 @@ body {
 
 .sylwetkainfo {
 	font-family: 'Loved by the King', cursive;
-	font-size: 20px;
+	font-size: 24px;
 	text-align: center;
 	line-height:1.2em;
 	margin-left: 180px;
@@ -235,13 +263,14 @@ body {
 .search {
 	width: 100px;
 	float:right;
-	margin-right: 15px;
+	margin-right: 55px;
 	margin-top: -42px;
 }
 
 .filter {
 	float: right;
-	margin: 15px;
+	margin: 10px;
+	margin-top: -42px;
 }
 
 .list li {

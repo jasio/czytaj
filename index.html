@@ -80,6 +80,10 @@
 		
 			<div class="row">
 				<div class="span7 offset5"><p id="ostatnie">Ostatnie książki przeczytane przez <span class="imie">Janka</span>:</p> <input class="search" placeholder="szukaj" /> 
+					<ul class="filter">
+            	<a href="#" rel='tooltip' title='Wyświetl wszystkie książki'><li class="btn" id="filter-none"><i class="icon-th-list"></i></li></a>
+              <a href="#" rel='tooltip' title='Wyświetl tylko polecane książki'><li class="btn" id="filter-beverages"><i class="icon-heart"></i></li></a>
+          </ul>
         </div>
 			</div>
 			
@@ -99,10 +103,7 @@
 				</div>
 				
 				<div class="span7" id="lista">
-              <ul class="filter">
-	              	<li class="btn" id="filter-none"><i class="icon-th-list"></i></li>
-                  <li class="btn" id="filter-beverages"><i class="icon-heart"></i></li>
-              </ul>
+              
               <ul class="list unstyled">
 	              <li>
                     <img src="img/books/triumfowiec.jpeg" class="thumb" alt="Okładka książki Triumf Owiec" />
@@ -158,6 +159,7 @@
 											<p class="desc"><span class="readwhen label label-success">Biografia</span>
                       <span class="description">Opierając się na ponad czterdziestu rozmowach z Jobsem, przeprowadzonych w ciągu dwóch lat, a także na wywiadach z ponad setką osób: członkami rodziny, przyjaciółmi, przeciwnikami, konkurentami i kolegami Jobsa, Walter Isaacson spisał wciągającą opowieść o pełnym wzlotów i upadków życiu oraz płomiennej osobowości twórczego przedsiębiorcy, którego wykraczająca poza wszelkie schematy pasja i perfekcjonizm zrewolucjonizowały sześć branż: komputery osobiste, filmy animowane, muzykę, telefony, tablety i publikacje cyfrowe.</span></p>
                   </li>
+
               </ul>
 						</div>
           </div>		
@@ -235,7 +237,8 @@
 			<!-- Poziom dolnego paska -->
 			<div class="row">
 				<div class="span12" id="acozemna">
-					<h1>A co ze mną?!</h1>
+					<h1>A co ze mną?!</h1> 
+					
 					<p id="lcalc">Jeśli masz <span class="TKAdjustableNumber" data-min="50" data-max="250" data-var="lwzrost"> cm wzrostu</span>, musisz czytać każdego dnia ok. <span data-var="lstrony" data-format="%.0f"> stron</span>, co daje ok. <span data-var="lksiazki" data-format="%.0f"> książek</span> w ciągu roku. </p>
 				</div>
 			</div>
@@ -243,7 +246,7 @@
 			<!-- Poziom stopki -->
 			<div class="row">
 				<div class="span12" id="stopka">
-					<p>&copy; Jan Giemza (bookznami.pl), 2012. <a data-toggle="modal" href="#siteinfo"><i class="icon-info-sign icon-white"></i></a></p>
+					<p>&copy; Jan Giemza (bookznami.pl), 2012. <a rel='tooltip' title='Informacje o stronie' data-toggle="modal" href="#siteinfo"><i class="icon-info-sign icon-white"></i></a></p>
 				</div>
 			</div>
 		
@@ -312,6 +315,8 @@
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>
 		<script type="text/javascript" src="js/list.min.js"></script>
+		
+		<!-- Nasze -->
 		<script src="js/app.js"></script>
 		<script src="js/lista.js"></script>
 		
@@ -322,6 +327,8 @@
 		<script type="text/javascript" src="js/TangleKit/BVTouchable.js"></script>
 		<script type="text/javascript" src="js/TangleKit/TangleKit.js"></script>
 		<script type="text/javascript" src="js/lcalc.js"></script>
+		
+		
 
   </body>
 </html>
