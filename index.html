@@ -73,7 +73,8 @@
 						</div>
 					</div>
 			</div>
-
+			
+			<!--JANEK-->
 			<!-- Poziom nagłówka tabeli -->
 			<div id="janek">
 			<div id="lovely-things-list">
@@ -177,12 +178,15 @@
 			</div>	
 			
 			<!--AGNIESZKA -->
-			<!-- Poziom nagłówka tabeli -->
 			<div id="agnieszka" class="nondisplay">
-			<div id="lovely-things-list">
+			<div id="lovely-things-list-aga">
 		
 			<div class="row">
-				<div class="span7 offset5"><p id="ostatnie">Ostatnie książki przeczytane przez <span class="imie">Agnieszkę</span>:</p> <input class="search" placeholder="szukaj" /> 
+				<div class="span7 offset5"><p id="ostatnie">Ostatnie książki przeczytane przez <span class="imie">Agę</span>:</p> <input class="search" placeholder="szukaj" /> 
+					<ul class="filter">
+            	<a href="#" rel='tooltip' title='Wyświetl wszystkie książki'><li class="btn" id="filter-none"><i class="icon-th-list"></i></li></a>
+              <a href="#" rel='tooltip' title='Wyświetl tylko polecane książki'><li class="btn" id="filter-beverages"><i class="icon-heart"></i></li></a>
+          </ul>
         </div>
 			</div>
 			
@@ -190,56 +194,93 @@
 			<div class="row"> 
 				<div class="span5" id="containtersylwetka">
 					<h1>Agnieszka</h1>
-					<p class="wzrost">175 cm</p>
+					<p class="wzrost">158 cm</p>
+					<aside class="sylwetkainfo">zastępca <br>dyktatora</aside>
 					<div class="progress progress-info progress-striped active">
-						<div class="bar" style="width: 18%;"></div>
+						<div class="bar" style="width: 4%;"></div>
 						
 					</div>
-					<p><span class="label label-info">18%</span> przeczytane</p>
-					<p>czyli ok. <span class="label label-info">2400 stron</span></p>
-					<p>książki utworzyłyby wieżę <br>o wysokości <span class="label label-info">25 cm</span></p>
+					<p><span class="label label-info">4%</span> przeczytane</p>
+					<p>czyli ok. <span class="label label-info">838 stron</span></p>
+					<p>książki utworzyłyby wieżę <br>o wysokości <span class="label label-info">5,7 cm</span></p>
+					<div id="cosadzisz">
+							<a data-toggle="modal" href="#skomentuj"><div class="alert alert-info">
+							<h4 class="alert-heading">Co sądzisz o naszym wyzwaniu?</h4>
+							Dopisz się i zobacz, co napisali inni. &raquo;
+						</div></a>
+					</div>
+					
+					
 				</div>
 				
+				
+				
 				<div class="span7" id="lista">
-              <ul class="filter">
-	              	<li class="btn" id="filter-none"><i class="icon-th-list"></i></li>
-                  <li class="btn" id="filter-beverages"><i class="icon-heart"></i></li>
-              </ul>
+              
               <ul class="list unstyled">
-                  <li>
-                      <img src="img/books/stevejobs.jpeg" class="thumb" />
-
-											<p class="author">Walter Isaacson</p>
-											
-                      <p class="name">Steve Jobs</p> 
-											<h6><span class="category">Biografia</span> • <span class="height">2 cm grubości</span></h6>
-											<p class="recommend"><img class="recommend_icon" src="img/recommend.png" alt="Polecamy!"></p>
-											
-											<p class="desc"><span class="readwhen label label-success">Styczeń</span>
-                      <span class="description">Opierając się na ponad czterdziestu rozmowach z Jobsem, przeprowadzonych w ciągu dwóch lat, a także na wywiadach z ponad setką osób: członkami rodziny, przyjaciółmi, przeciwnikami, konkurentami i kolegami Jobsa, Walter Isaacson spisał wciągającą opowieść o pełnym wzlotów i upadków życiu oraz płomiennej osobowości twórczego przedsiębiorcy, którego wykraczająca poza wszelkie schematy pasja i perfekcjonizm zrewolucjonizowały sześć branż: komputery osobiste, filmy animowane, muzykę, telefony, tablety i publikacje cyfrowe.</span></p>
-                  </li>
-                  <li>
-                      <img src="images/coffee.jpg" class="thumb" />
-                      <h4><span class="name">Good Coffee</span> <span class="category">Beverage</span></h4></h4>
-											<p class="author">Anonim</p>
-											<p class="height">2 cm</p>
-											<p class="readwhen">Luty 2012</p>	
-											<p class="recommend"></p>
-                      <p class="description">Coffee is a brewed beverage with a dark, slightly acidic flavor prepared from the roasted seeds of the coffee plant, colloquially called coffee beans.</p>
-                  </li>
-                  <li>
-                      <img src="images/fullthrottle.jpg" class="thumb" />
-                      <h4><span class="name">Full Throttle</span> <span class="category">Game</span></h4></h4>
-											<p class="author">Anonim</p>
-											<p class="height">2 cm</p>
-											<p class="readwhen">Luty 2012</p>
-											<p class="recommend">Nie</p>
-                      <p class="description">Full Throttle is a computer adventure game developed and published by LucasArts. It was designed by Tim Schafer, who would later go on to design the critically acclaimed titles Grim Fandango, Psychonauts and Brütal Legend.</p>
-                  </li>
+	              <li>
+								<img src="img/books/siecikomputerowe.jpg" class="thumb" alt="Sieci
+								komputerowe.Kurs" />
+								<p class="author">Witold Wrotek</p>
+								<p class="name">Sieci komputerowe.Kurs</p>
+								<h6><span class="category">360 stron</span> • <span class="height">2,6 cm
+								grubości</span></h6>
+								<p class="recommend"></p>
+								<p class="desc">
+								<span class="readwhen label label-success">Informatyka</span>
+								<span class="description">Jeżeli w Twoim akademiku / miejscu pracy  /na Twojej
+								uczelni sieć komputerowa działa z prędkością 1 kilobita na sekundę
+								(no, chyba że akurat ma 76. awarię w tym miesiącu), to już wiesz, że komuś zabrakło
+								lekury książki Wrotka. Dla dobra swojego i publicznego -
+								kupcie <i>Sieci komputerowe. Kurs</i> i dajcie administratorom swoich sieci. A potem
+								przepytajcie. Wielokrotnie.
+								</span>
+								</p>
+								</li>
+								<li>
+								<img src="img/books/webwriting.jpg" class="thumb" alt="Webwriting.
+								Profesjonalne tworzenie tekstów do Internetu" />
+								<p class="author">Joanna Wrycza-Bekier</p>
+								<p class="name"><a href="#" title='Webwriting. Profesjonalne tworzenie tekstów do internetu' rel="tooltip" class="niewidaclinku">Webwriting...</a></p>
+								<h6><span class="category">158 stron</span> • <span class="height">0,6 cm
+								grubości</span></h6>
+								<p class="recommend"></p>
+								<p class="desc">
+								<span class="readwhen label label-success">Webwriting</span>
+								<span class="description">Jak zatytułujesz swojego maila z reklamą, żeby
+								odbiorca nie przeniósł go do spamu bez czytania?
+								Gdzie umieścisz na stronie najważniejsze informacje, żeby nie przemieszały się z
+								pobocznymi ramkami?
+								Jaka jest najważniejsza część mowy dla tekstów internetowych?
+								Jak żyć, żeby być szczęśliwym?
+								I dlaczego na świecie jest tyle zła i agresji?
+								Ta książka nie jest w stanie odpowiedzieć na wszystkie pytania, ale z pierwszymi trzema sobie poradzi.
+								</span>
+								</p>
+								</li>
+								<li>
+								<img src="img/books/kolymskie.jpg" class="thumb" alt="Dzienniki kołymskie"
+								/>
+								<p class="author">Jacek Hugo-Bader</p>
+								<p class="name">Dzienniki kołymskie</p>
+								<h6><span class="category">320 stron</span> • <span class="height">2,5 cm
+								grubości</span></h6>
+								<p class="recommend"></p>
+								<p class="desc">
+								<span class="readwhen label label-success">reportaż</span>
+								<span class="description">Już rok przed powstaniem książki jakucka szamanka
+								Edij Dora wiedziała,
+								jak będą wyglądać <i>Dzienniki kołymskie</i>, oczyściła je również z wszystkich ludzi,
+								którzy po ich przeczytaniu
+								mieliby nie odczuć satysfakcji. Chyba nie masz już wątpliwości, że warto przebyć z
+								autorem 2025 kilometrów wzdłuż Traktu Kołymskiego?
+								</span>
+								</p>
+								</li>
 
               </ul>
 						</div>
-          </div>
+          </div>		
 			</div>
 			</div>
 			

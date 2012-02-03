@@ -52,6 +52,11 @@ body {
 	-webkit-animation-timing-function:ease-in;
 }
 
+#lovely-things-list-aga {
+	-webkit-animation-name:showup;
+	-webkit-animation-duration:0.5s;
+	-webkit-animation-timing-function:ease-in;
+}
 
 /*********
 STYLES
@@ -119,7 +124,7 @@ body {
 	margin-top:150px;
 	font-size: 10px;
 	color:#FFF;
-	background-image:none;
+	background-image:url('none');
 	background-color:#000;
 }
 
@@ -143,6 +148,31 @@ body {
 	transform: scale(1) rotate(-15deg) translate(0px, 0px) skew(0deg, 0deg);
 }
 
+#zobaczinneosoby:hover {
+	margin-top: 80px;
+	margin-left: 12px;
+	width:100px;
+	height:50px;
+	padding:9px;
+	padding-top:16px;
+	font-family: 'Loved by the King', cursive;
+	font-size:22px;
+	background-image:none;
+	background-image:url('../img/zobaczinneosoby_bg.gif');
+	background-color:rgba(255,255,255,0.1);
+	border:none;
+	-moz-transform: scale(1) rotate(-15deg) translate(0px, 0px) skew(0deg, 0deg);
+	-webkit-transform: scale(1) rotate(-15deg) translate(0px, 0px) skew(0deg, 0deg);
+	-o-transform: scale(1) rotate(-15deg) translate(0px, 0px) skew(0deg, 0deg);
+	-ms-transform: scale(1) rotate(-15deg) translate(0px, 0px) skew(0deg, 0deg);
+	transform: scale(1) rotate(-15deg) translate(0px, 0px) skew(0deg, 0deg);
+	-webkit-text-shadow: rgba(0,0,0,0.6) 1px 0px 20px;
+	-o-text-shadow: rgba(0,0,0,0.6) 1px 0px 20px;
+	-moz-text-shadow: rgba(0,0,0,0.6) 1px 0px 20px;
+	text-shadow: rgba(0,0,0,0.6) 1px 0px 20px;
+	background-position: 0 0px;
+}
+
 .dropdown-menu {
 	width: 100px;
 }
@@ -151,11 +181,6 @@ body {
 	font-family: 'Loved by the King', cursive;
 	text-align: center;
 	font-size:18px;
-}
-
-#zobaczinneosoby:hover {
-	text-shadow: rgba(0,0,0,0.6) 1px 0px 20px;
-	background-position: 0 0px;
 }
 
 #zobaczinneosoby:focus {
@@ -211,7 +236,6 @@ body {
 	font-weight: normal;
 	font-size: 40px;
 	text-shadow: 1px -1px 1px #dbdbdb;
-	filter: dropshadow(color=#dbdbdb, offx=1, offy=-1);
 	line-height: 1.4em;
 }
 
@@ -358,7 +382,7 @@ body {
 
 #mikethefrog {
 	font-family: 'Loved by the King', cursive;
-	font-size: 30px;
+	font-size: 26px;
 	line-height: 1.6em;
 }
 
@@ -373,3 +397,12 @@ body {
 	text-decoration:none;
 }
 
+.niewidaclinku {
+	color: #000;
+	text-decoration: none;
+}
+
+.niewidaclinku:hover {
+	color: #000;
+	text-decoration: none;
+}

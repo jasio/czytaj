@@ -37,12 +37,8 @@ $('#siteinfo').modal('hide');
 
 $('#aboutproject').modal('hide')
 
-$('.filter').tooltip({
-     selector: "a[rel=tooltip]"
-   })
-
-$('div#stopka').tooltip({
-     selector: "a[rel=tooltip]"
+$(document).tooltip({
+     selector: "a[rel=tooltip]" 
    })
 
 
