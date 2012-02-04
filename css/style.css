@@ -58,6 +58,12 @@ body {
 	-webkit-animation-timing-function:ease-in;
 }
 
+#lovely-things-list-dom {
+	-webkit-animation-name:showup;
+	-webkit-animation-duration:0.5s;
+	-webkit-animation-timing-function:ease-in;
+}
+
 /*********
 STYLES
 *********/
@@ -333,18 +339,21 @@ body {
 }
 
 .author {
-	line-height: 0.5em;
+	line-height: 0.2em;
 	font-size: 20px;
+	margin-top: -5px;
 	
 }
 
 .name {
-	line-height: 0.5em;
+	line-height: 1em;
 	font-size: 32px;
+
+	
 }
 
 .category {
-	line-height: 0.5em;
+	line-height: 0.1em;
 	
 }
 
@@ -405,4 +414,23 @@ body {
 .niewidaclinku:hover {
 	color: #000;
 	text-decoration: none;
+}
+
+.stackofbooks {
+	text-align: center;
+}
+
+.stackofbooks:first-of-type {
+	margin-top: 640px;
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+
+#stackofbooks-bg {
+	background: url(../img/stackofbooks.jpg) top center no-repeat;
+}
+
+#zobaczinne-help {
+	float:right;
+	margin-left: 10px;
 }
